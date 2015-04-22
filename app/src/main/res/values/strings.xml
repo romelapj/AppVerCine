@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">Qovie</string>
+
+  <!-- Activity name -->
+  <string name="places_sample_activity_title">Places Sample</string>
+  <string name="youtube_sample_activity_title">Youtube Sample</string>
+  <string name="video_sample_activity_title">Video Sample</string>
+    <string name="action_contact">Contacto</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_refresh">Busqueda</string>
+  <!-- Buttons -->
+  <string name="youtube_sample_button">Youtube</string>
+  <string name="main_activity_youtube_button_title">Youtube</string>
+
+</resources>

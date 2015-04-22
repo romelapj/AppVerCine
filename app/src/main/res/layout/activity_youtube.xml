@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:draggable_panel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <!-- Movie Thumbnail -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <include layout="@layout/toolbar"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <ImageView
+                  android:layout_weight="1"
+                  android:id="@+id/iv_thumbnail"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_margin="@dimen/separador_interno"
+                  android:src="@drawable/img_peliculab"
+                  style="@style/image_view"/>
+              <LinearLayout
+                  android:layout_weight="2"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:padding="@dimen/separador_interno">
+                  <!--<TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Titulo Original: INSURGENTE"
+                      style="@style/subtitulo"/>-->
+
+
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                              <ImageView
+                                  android:layout_width="35dp"
+                                  android:layout_height="35dp"
+                                  android:src="@drawable/ic_clasificacion"
+                                  android:padding="@dimen/separador_interno"
+                                  style="@style/image_view"/>
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:gravity="center_vertical"
+                                  android:paddingLeft="@dimen/separador_interno"
+                                  android:text="Acción/Aventura/Romántica"/>
+                          </LinearLayout>
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                              <ImageView
+                                  android:layout_width="35dp"
+                                  android:layout_height="35dp"
+                                  android:src="@drawable/ic_categoria"
+                                  android:padding="@dimen/separador_interno"
+                                  style="@style/image_view"/>
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:gravity="center_vertical"
+                                  android:paddingLeft="@dimen/separador_interno"
+                                  android:text="12 años"/>
+                          </LinearLayout>
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                              <ImageView
+                                  android:layout_width="35dp"
+                                  android:layout_height="35dp"
+                                  android:src="@drawable/ic_horario"
+                                  android:padding="@dimen/separador_interno"
+                                  style="@style/image_view"/>
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:gravity="center_vertical"
+                                  android:paddingLeft="@dimen/separador_interno"
+                                  android:text="120 minutos"/>
+                          </LinearLayout>
+
+
+                  <Button
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@color/banana"
+                      android:textSize="15dp"
+                      android:id="@+id/buttonTrailer"
+                      android:text="Ver Trailer"
+                      android:layout_gravity="right"
+                      android:padding="@dimen/separador_interno"/>
+              </LinearLayout>
+          </LinearLayout>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Trailers Recomendados"
+              style="@style/subtitulo"/>
+          <ListView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/lvRecomendado"
+              android:layout_gravity="center_horizontal"
+              android:background="#eee"/>
+
+
+      </LinearLayout>
+
+  </LinearLayout>
+
+  <!-- DraggablePanel -->
+
+  <com.github.pedrovgs.DraggablePanel
+      android:id="@+id/draggable_panel"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      draggable_panel:x_scale_factor="@dimen/x_scale_factor"
+      draggable_panel:y_scale_factor="@dimen/y_scale_factor"
+      draggable_panel:top_fragment_height="@dimen/top_fragment_height"
+      draggable_panel:top_fragment_margin_right="@dimen/top_fragment_margin"
+      draggable_panel:top_fragment_margin_bottom="@dimen/top_fragment_margin"
+      draggable_panel:enable_horizontal_alpha_effect="false"/>
+
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="semi_transparent_black">#7f000000</color>
+    <color name="black_transparent">#00000000</color>
+    <color name="background_window">#FFE5E5E5</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="banana">#FFF9B104</color>
+    <color name="azul">#FF3F9FE0</color>
+</resources>

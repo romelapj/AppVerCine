@@ -1,0 +1,27 @@
+<resources>
+
+  <!-- Application -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/background_window</item>
+        <item name="colorPrimary">@color/azul</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/banana</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+    <style name="subtitulo">
+        <item name="android:textSize">@dimen/tam_subtitulo</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+  <style name="image_view">
+    <item name="android:scaleType">centerCrop</item>
+  </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+
+    </style>
+
+
+
+
+
+</resources>
